@@ -1,0 +1,58 @@
+div {
+    border: 1px solid lightcyan;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+div:nth-child(1) {
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.5);
+}
+
+div:nth-child(2) {
+    background-image: linear-gradient(90deg,  purple, green);
+}
+
+div:nth-child(3) {
+    transform: rotate(190deg) scale(1);
+}
+
+div:nth-child(5) {
+    width: 50%;
+    font-size: 45px;
+    animation: myanimation 0.75s infinite;
+}
+
+@keyframes myanimation {
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+div:nth-child(6) {
+    font-family: shape;
+}
+
+@font-face {
+    font-family: shape;
+    src: url(assets/Fonts/Rustic\ Barn.otf);
+}
+
+div:nth-child(4) {
+    color: aqua;
+    background-color: wheat;
+    
+}
+.element:hover{
+    color: pink;
+   background: peru;
+   border: 3px solid rgb(98, 255, 0);
+}
